@@ -5,6 +5,9 @@
     <div class="divcadastro">
     <a href="AT06_Consulta.php" class="botaocadastro">Voltar</a>
     </div>
+    <div class="divcadastro1">
+    <a href="Injeção_de_clientes.php" class="botaocadastroauto">Cadastro Automatico</a>
+    </div>
     <div class="formularios">
     <h1>Livraria</h1>
     <div class="form1A">
@@ -26,6 +29,7 @@
         <input type="text" name="codigo"> -->
         <br><br><input type="submit" value="Enviar" class="botaoform1">
     </form>
+    
     </div>
     </div>
     </div>

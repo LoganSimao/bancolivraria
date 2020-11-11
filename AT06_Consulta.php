@@ -5,6 +5,9 @@
     <div class="divcadastro">
     <a href="AT05_formulario.php" class="botaocadastro">Cadastrar</a>
     </div>
+    <div class="divconsultaavancada">
+    <a href="AT05_Formulariodeconsulta.php" class="botaocadastro">Avançado</a>
+    </div>
 <div class="formularios">
 <h1>Database</h1>
 <div class="form">

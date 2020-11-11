@@ -1,6 +1,10 @@
 <?php
 include 'AT06_header.php';
-
+?>
+<div class="divcadastro2">
+    <a href="AT06_Consulta.php" class="botaocadastroauto">Voltar</a>
+</div>
+<?php
 if(mysqli_error($conn)){
     echo "<h2>erro na conexao!</h2>";
 }

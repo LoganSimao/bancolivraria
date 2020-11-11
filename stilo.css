@@ -41,6 +41,7 @@ table{
     height: 15rem;
     margin-bottom: 1rem;
 }
+
 .form1A{
     background-color: #fff;
     height: 42rem;
@@ -137,6 +138,7 @@ img{
     margin-top: 5rem;
     width: 95%;
 }
+
 .botaoform1{
     color: #f0f0f0;
     background: #000;
@@ -185,6 +187,23 @@ img{
     margin-left: -70rem;
 }
 
+.divcadastro1{
+    position: absolute;
+    margin-top: 52rem;
+}
+
+.divcadastro2{
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 50rem;
+}
+
+.divconsultaavancada{
+    position: absolute;
+    margin-top: 10rem;
+    margin-right: 70rem;
+}
+
 .botaocadastro{
     position: relative;
     font-family: FuturaBT;
@@ -200,6 +219,20 @@ img{
     transition: .2s;
 }
 
+.botaocadastroauto{
+    position: relative;
+    font-family: FuturaBT;
+    font-size: small;
+    text-transform: uppercase;
+    background-color: #FF0046;
+    border: 2px solid #FF0046;
+    padding: 1rem 2.6rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    transition: .2s;
+}
 .botao4{
     color: #f0f0f0;
     background: #000;
@@ -249,6 +282,12 @@ img{
     background-color: #fff;
     border-color: #000;
     color: #000;
+}
+
+.botaocadastroauto:hover{
+    background-color: #fff;
+    color: #FF0046;
+    cursor: pointer;
 }
 
 h1{
