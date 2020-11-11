@@ -3,7 +3,7 @@
 ## Atividade 05 arquivos...
 
 ###### criação do banco de dados e tabela
-- criação do banco de dados e da tabela é via script em php.
+- criação do banco de dados e da tabela é via script em php, são 2 arquivos 1 para a criação do banco de dados e outro para a criação da tabela.
 
 ###### injeção de clientes  e apagar_bd...
 - "apagar_bd.php" script em php para apagar o banco de dados db_livraria usado para testes.
