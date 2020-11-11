@@ -7,7 +7,7 @@
     <title>Cadastro Livraria</title>
 </head>
 <body>
-<div class="tabela-container">
+<div class="tb-container">
 <div class="divcadastro">
 <a href="AT05_formulario.php" class="botaocadastro">Cadastrar</a>
 </div>

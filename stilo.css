@@ -17,14 +17,21 @@ table{
 .tabela-container{
     display: flex;
     border-right: 3rem;
-    /*margin-left: 40rem;*/
     justify-content: center;
-    /*background-color: #4C4C4C99;*/
-    
+}
+
+.tb-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tb-container1{
+    display: flex;
+    background: #fff;
 }
 
 .formularios{
-    /*background-color: grey; fundo*/
     opacity: 0.9;
     box-shadow: 5px 10px 8px black;
 }
