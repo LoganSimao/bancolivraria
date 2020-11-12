@@ -3,13 +3,16 @@
 ?>
 <div class="tabela-container">
     <div class="divcadastro">
+    <!--botoes para cadastro de clientes e modo "avançado" de pesquisa que faz parte da lição 05-->
     <a href="AT05_formulario.php" class="botaocadastro">Cadastrar</a>
     </div>
     <div class="divconsultaavancada">
     <a href="AT05_Formulariodeconsulta.php" class="botaocadastro">Avançado</a>
     </div>
+    <!-- -->
 <div class="formularios">
 <h1>Database</h1>
+<!--formulario para consulta no banco de dados-->
 <div class="form">
 <form action="AT06_search.php" method="POST">
     <h2>Consulta ao banco de dados</h2>
@@ -23,6 +26,7 @@
     <button type="submit" name="cons" class="botaoform1">Enviar</button>
 </form>
 </div>
+<!--formulario para alteração de dados-->
 <div class=form>
 <form action="AT06_search.php" method="POST">
     <H2>Alteração de dados no banco de dados</h2>
@@ -39,6 +43,7 @@
     <button name="cons2" class="botaoform1">Enviar</button>
 </form>
 </div>
+<!--formulario para deletar registros-->
 <div class="form2">
 <form action="AT06_search.php" method="POST">
     <h2>Deletar registro do banco de dados</h2>

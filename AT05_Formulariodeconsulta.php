@@ -15,6 +15,7 @@
 <div class="form4">
     <h1>Consulta</h1>
     <div class="con">
+    <!-- formulario para consulta no "Avançado"-->
     <form name="cadastro" method="GET" action="AT05_retornoFormularioConsulta.php">
 
         <p><input type="checkbox" name="nome" value="name"> Nome</p>

@@ -226,13 +226,13 @@ img{
     text-transform: uppercase;
     background-color: #FF0046;
     border: 2px solid #FF0046;
-    padding: 1rem 2.6rem;
+    padding: 1rem 3.6rem;
     text-decoration: none;
     text-align: center;
     color: #fff;
-    margin-top: 3rem;
     transition: .2s;
 }
+
 .botao4{
     color: #f0f0f0;
     background: #000;

@@ -6,13 +6,17 @@
     <a href="AT06_Consulta.php" class="botaocadastro">Voltar</a>
     </div>
     <div class="divcadastro1">
-    <a href="Injeção_de_clientes.php" class="botaocadastroauto">Cadastro Automatico</a>
+    <!--cadastro automatico de alguns clientes-->
+    <form action="AT06_search.php" method="POST">
+    <input type="submit" name="cad" class="botaocadastroauto" value ="Cadastro Automatico">
+    </form>
     </div>
     <div class="formularios">
     <h1>Livraria</h1>
     <div class="form1A">
+    <!--cadastro manual dos clientes-->
     <h2>Cadastro de Clientes</h2>
-    <form name="cadastro_bd" method="POST" action="AT05_retorno_do_formulario.php">
+    <form name="cadastro_bd" method="POST" action="AT06_search.php">
         <p>Nome</p>
         <input type="text" name="nome" class="btt2">
         <p>Endereço</p>
@@ -25,9 +29,7 @@
         <input type="text" name="estado" class="btt2">
         <p>Numero de Celular</p>
         <input type="text" name="telcel" class="btt2">
-        <!--<p>Codigo</p>
-        <input type="text" name="codigo"> -->
-        <br><br><input type="submit" value="Enviar" class="botaoform1">
+        <br><br><input type="submit" value="Enviar" class="botaoform1"name ="cad">
     </form>
     
     </div>

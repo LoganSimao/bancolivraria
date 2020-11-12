@@ -12,9 +12,7 @@ if(mysqli_connect_errno($conn)){
 }
 
 else{
-    //$result = mysqli_query($conn,"SELECT * FROM db_clientes");
-    //$num_rows = mysqli_num_rows($result);
-    //$id = $num_rows + 1;
+    //cadastro manual dos clientes
     $sql = "INSERT INTO db_clientes(nome,endereco,bairro,cidade,estado,telCel) VALUES('$_POST[nome]','$_POST[endereco]','$_POST[bairro]','$_POST[cidade]','$_POST[estado]','$_POST[telcel]')";
 
 
@@ -26,7 +24,6 @@ else{
     }
 
     mysqli_close($conn);
-
 }
 
 ?>
