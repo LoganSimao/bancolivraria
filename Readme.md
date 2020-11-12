@@ -1,29 +1,17 @@
 # exercicios de PHP
 
-## Atividade 05 arquivos...
+## Atividade 05 e 06...
 
 ###### criação do banco de dados e tabela
-- criação do banco de dados e da tabela é via script em php, são 2 arquivos 1 para a criação do banco de dados e outro para a criação da tabela.
+- criação do banco de dados e da tabela é via script em php, o botão "criar bd" **vai deletar o banco de dados** caso ele exista com o nome _db\_livraria_ e criar o mesmo com a tabela db_clientes.
 
-###### injeção de clientes  e apagar_bd...
-- "apagar_bd.php" script em php para apagar o banco de dados db_livraria usado para testes.
-- "injeção_de_clientes.php" que esta linkada ao botao "CADASTRO AUTOMATICO" é o script para injetar clientes a tabela sem necessidade de cadastrar 1 por 1 usado para não ficar recadastrando clientes de modo manual pelo formulário.(só para testar o comportamento do banco é claro)
+###### Cadastro automatico de clientes
+- uma das funções na aba "cadastro" é o botão de **Cadastro automatico** que vai rodar um script para cadastrar 6 clientes no banco de dados para facilitar a analise da aplicação.
 
 ###### formulario de consulta e retorno de formulario de consulta...
-- "AT05_Formulariodeconsulta" e "AT05_são a resposta da atividade 5 da parte de consultas mas elas não fazem parte do "projeto" unindo a lição 06.
+- "AT05_formulario" e "AT05_retornoformulario" são responsaveis pelo cadastro manual dos clientes, ja o "AT_formularioconsulta.php" e o "AT05_retornoformularioconsulta" são a resposta para as consultas ao banco de dados de forma mais dinâmica e vem com o botão de "Avançado" no "index.php.php".
 
-## Atividade 06 arquivos...
+###### include header...
 
-###### conexão e header...
+- "AT06_header.php" foi aproveitado para a conexão com o banco de dados e formatação usando css.
 
-- "AT06_conexao_bd" para utilizar o mysqli_connect() em multiplos arquivos.
-- "AT06_header.php" tambem serve pra usar o mesmo cabeçalho para varios arquivos assim aproveitando a conexão e o "style.css".
-
-
-###### Consulta...
-
-- "AT06_Consulta" é o index do projeto ate o momento, após a criação do banco de dados e da tabela da pra cadastrar, consultar, alterar e deletar registros no banco de dados por essa página.
-
-## apagar_bd
-
-- script em php para apagar o banco de dados db_livraria usado para testes.

@@ -10,7 +10,7 @@
 
     echo " <div class='tb-container'>
     <div class='divcadastro'>
-    <a href='AT06_Consulta.php' class='botaocadastro'>Voltar</a>
+    <a href='index.php' class='botaocadastro'>Voltar</a>
 </div>
            <div class='tb-container1'>";
     

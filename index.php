@@ -9,6 +9,9 @@
     <div class="divconsultaavancada">
     <a href="AT05_Formulariodeconsulta.php" class="botaocadastro">Avançado</a>
     </div>
+    <div class="divcriarbanco">
+    <a href="criar_bdcompleto.php" class="botaocadastro1">Criar Banco</a>
+    </div>
     <!-- -->
 <div class="formularios">
 <h1>Database</h1>

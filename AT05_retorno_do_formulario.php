@@ -3,7 +3,7 @@ include 'AT06_header.php';
 
 echo "<div class='tabela-container'>
 <div class='divcadastro'>
-    <a href='AT06_Consulta.php' class='botaocadastro'>Voltar</a>
+    <a href='index.php' class='botaocadastro'>Voltar</a>
 </div>
 <div class='formularios'>";
 

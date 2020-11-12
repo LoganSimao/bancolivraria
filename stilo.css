@@ -204,6 +204,12 @@ img{
     margin-right: 70rem;
 }
 
+.divcriarbanco{
+    position: absolute;
+    margin-top: 16rem;
+    margin-right: 70rem;
+}
+
 .botaocadastro{
     position: relative;
     font-family: FuturaBT;
@@ -212,6 +218,21 @@ img{
     background-color: #FF0046;
     border: 2px solid #FF0046;
     padding: 1rem 2.6rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    transition: .2s;
+}
+
+.botaocadastro1{
+    position: relative;
+    font-family: FuturaBT;
+    font-size: small;
+    text-transform: uppercase;
+    background-color: #FF0046;
+    border: 2px solid #FF0046;
+    padding: 1rem 2.2rem;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -266,6 +287,11 @@ img{
     cursor: pointer;
 }
 
+.botaocadastro1:hover{
+    background-color: #fff;
+    color: #FF0046;
+    cursor: pointer;
+}
 .botao:hover{
     background-color: #fff;
     border-color: #000;
