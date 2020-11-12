@@ -3,7 +3,7 @@
 ## Atividade 05 e 06...
 
 ###### criação do banco de dados e tabela
-- criação do banco de dados e da tabela é via script em php, o arquivo "criação_bd.php" ** vai deletar o banco de dados** caso ele exista com o nome _db\_livraria_ e criar o mesmo com a tabela db_clientes.
+- criação do banco de dados e da tabela é via script em php, o arquivo "criação_bd.php" **vai deletar o banco de dados** caso ele exista com o nome _db\_livraria_ e criar o mesmo com a tabela db_clientes.
 
 ###### Cadastro automatico de clientes
 - uma das funções na aba "cadastro" é o botão de **Cadastro automatico** que vai rodar um script para cadastrar 6 clientes no banco de dados para facilitar a analise da aplicação.
@@ -21,4 +21,4 @@
 
 ## resumindo...
 
-- criar o banco de dados apartir do arquivo "criação_bd.php" e acessando o "AT06_consulta" vc tem acesso a todas as paginas.
+- criar o banco de dados apartir do arquivo **"criação_bd.php"** e acessando o **"AT06_consulta"** vc tem acesso a todas as paginas.
