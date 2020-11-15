@@ -1,5 +1,6 @@
 <?php
 //conexao com o banco de dados db_livraria
+    
 $local = 'localhost';
 $user = 'root';
 $pass = '';
@@ -13,7 +14,7 @@ $conn = mysqli_connect($local,$user,$pass,$db);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta no banco de dados</title>
+    <title>Database</title>
     <link rel="stylesheet" href='stilo.css'>
 </head>
 <body>

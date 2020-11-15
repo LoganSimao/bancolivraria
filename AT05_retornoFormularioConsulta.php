@@ -1,5 +1,10 @@
 <?php
     include 'AT06_header.php';
+    session_start();
+    if(!isset($_SESSION['logado'])){
+        header('Location: restrict.php');
+    }
+    
     $lists = array();
     $lists1 = array();
     $lists2 = array();
@@ -10,7 +15,7 @@
 
     echo " <div class='tb-container'>
     <div class='divcadastro'>
-    <a href='index.php' class='botaocadastro'>Voltar</a>
+    <a href='AT06_consulta.php' class='botaocadastro'>Voltar</a>
 </div>
            <div class='tb-container1'>";
     

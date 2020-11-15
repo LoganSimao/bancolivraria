@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['logado'])){
+    header('Location: restrict.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +16,7 @@
 <body>
 <div class="tb-container">
 <div class="divcadastro">
-<a href="AT05_formulario.php" class="botaocadastro">Cadastrar</a>
+    <a href="AT06_consulta.php" class="botaocadastro">Voltar</a>
 </div>
 <div class="formularios">
 <div class="form4">

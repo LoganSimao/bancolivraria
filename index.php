@@ -1,60 +1,72 @@
 <?php
     include 'AT06_header.php';
-?>
-<div class="tabela-container">
-    <div class="divcadastro">
-    <!--botoes para cadastro de clientes e modo "avançado" de pesquisa que faz parte da lição 05-->
-    <a href="AT05_formulario.php" class="botaocadastro">Cadastrar</a>
+
+    session_start();
+
+    if(isset($_POST['cad3'])){
+
+        $erro = array();
+
+        $login = mysqli_real_escape_string($conn,$_POST['login']);
+        $senha = mysqli_real_escape_string($conn,$_POST['senha']);
+        
+        if(empty($login) or empty($senha)){
+            $erro[] = "<p>- Campo de login e senha incompletos!</p>";
+        }
+        else{
+            $sql = "SELECT loginFunc FROM db_funcionarios WHERE loginFunc = '$login'";
+
+            $resultado = mysqli_query($conn,$sql);
+            $rows = mysqli_num_rows($resultado);
+
+            if($rows > 0){
+                $sql = "SELECT * FROM db_funcionarios WHERE loginFunc = '$login' AND senhaFunc = '$senha'";
+                $resultado = mysqli_query($conn,$sql);
+                $rows = mysqli_num_rows($resultado);
+
+                if($rows == 1){
+                    $log = mysqli_fetch_array($resultado);
+
+                    mysqli_close($conn);
+                    $_SESSION['logado'] = true;
+                    $_SESSION['codFunc'] = $log['codFunc'];
+
+                    header('location: AT06_consulta.php');
+                }
+                else{
+                    $erro[] = "<p>- Usuário e senha não conferem!</p>";
+                }
+            }
+            else{
+                $erro[] = "<p>- Usuário inexistente!</p>";
+            }
+        }
+    }
+    
+?>  
+    <div class="tabela-container">
+        <div class="divcriarbanco">
+        <p><a href="criar_bdcompleto.php" class="botaocriarbanco">Criar Banco</a></p>
+        </div>
+    <div class="formularios">
+    <h1>database</h1>
+    <div class="form1B">
+        <h2>Acesso ao banco de dados</h2>
+        <p>Gestão de clientes e funcionários favor identifique-se!</p>
+        <form action="<?PHP $_SERVER['PHP_SELF'];?>" method="POST">
+            <p>Login</p><input type="text" name="login"  class="btt1">
+            <p>Senha</p><input type="password" name="senha" class="btt1">
+            <?php
+                if(!empty($erro)){
+                    foreach($erro as $erros){
+                        echo $erros;
+                    }
+                }
+            ?>
+            </br></br><input type="submit" name="cad3" value="Entrar" class="botaologin">
+        </form>
     </div>
-    <div class="divconsultaavancada">
-    <a href="AT05_Formulariodeconsulta.php" class="botaocadastro">Avançado</a>
     </div>
-    <div class="divcriarbanco">
-    <a href="criar_bdcompleto.php" class="botaocadastro1">Criar Banco</a>
     </div>
-    <!-- -->
-<div class="formularios">
-<h1>Database</h1>
-<!--formulario para consulta no banco de dados-->
-<div class="form">
-<form action="AT06_search.php" method="POST">
-    <h2>Consulta ao banco de dados</h2>
-    <input type="text" name="search" placeholder="Consultar..." class="btt1">
-    <div class="alinhamento">
-        <p>
-            <label for="consultaid">
-            Consultar por ID <input type="radio" name="id" value="sim">S<input type="radio" name="id" value="nao" checked>N</p>
-            <p>tabela ordem decrescente</label><input type="radio" name="decres" value="dec">S<input type="radio" name="decres" value="cre" checked>N
-    </p></div>
-    <button type="submit" name="cons" class="botaoform1">Enviar</button>
-</form>
-</div>
-<!--formulario para alteração de dados-->
-<div class=form>
-<form action="AT06_search.php" method="POST">
-    <H2>Alteração de dados no banco de dados</h2>
-    <p>Alterar <input type="text" name ="valorNovo" placeholder="Dado a ser alterado aqui" class="btt3">
-    no ID <input type="number" name="valorVelho" placeholder="ID da alteração" class="btt3"></p><p class="p2"> Na colouna
-    <select name = "valorColuna" class="colunas">
-        <option value="nome">Nome</option>
-        <option value="endereco">Endereço</option>
-        <option value="bairro">Bairro</option>
-        <option value="cidade">Cidade</option>
-        <option value="estado">Estado</option>
-        <option value="telCel">Celular</option>
-    </select></p>
-    <button name="cons2" class="botaoform1">Enviar</button>
-</form>
-</div>
-<!--formulario para deletar registros-->
-<div class="form2">
-<form action="AT06_search.php" method="POST">
-    <h2>Deletar registro do banco de dados</h2>
-    <p>ID do registro <input type="number" name="registroDeletar" placeholder="deletar..." class="btt4"></p>
-    <button name="cons3" class="botaoform2">Enviar</button>
-</form>
-</div>
-</div>
-</div>
 </body>
 </html>

@@ -1,10 +1,14 @@
 <?php
     include 'AT06_header.php';
+    session_start();
+    if(!isset($_SESSION['logado'])){
+        header('Location: restrict.php');
+    }
 ?>
 
 <div class="tabela-container">
 <div class="divcadastro">
-    <a href="index.php" class="botaocadastro">Voltar</a>
+    <a href="AT06_consulta.php" class="botaocadastro">Voltar</a>
 </div>
 <div class="formularios">
 <h1>Resultado da Consulta</h1>
@@ -192,6 +196,15 @@
         else{
             echo "<h2>Erro ao inserir clientes! Erro: ".mysqli_error($conn)."</h2>";
         }
+    }
+    //logout do sistema
+
+    if(isset($_POST['logout'])){
+        session_start();
+        session_unset();
+        session_destroy();
+
+        header('Location: index.php');
     }
     mysqli_close($conn);
 ?>
